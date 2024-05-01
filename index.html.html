@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mao</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can create a CSS file for styling -->
+    <style>
+        @font-face {
+            font-family: MikeSamiya;
+            src: url(Mike\ Samiya.otf);
+            font-family: Sketch;
+            src: url(Doctor\ Soos\ Light\ 1.1.ttf)
+        }
+        * {
+            font-family: MikeSamiya;
+            font-family: Sketch;
+        }   
+        body {
+            background-color: #8d8377; /* Change the background color of the entire webpage */
+            font-family: sketch;
+            font-size: 35px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        header, main, footer {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #4500e6;
+        }
+
+        section {
+            margin-top: 30px;
+ /* Change the color of the dividers */
+            padding-top: 20px; /* Add some padding to make it visually pleasing */
+/* Change the background color of the sections */
+            border-radius: 10px; /* Add rounded corners to the sections */
+        }
+
+        footer {
+            margin-top: 50px;
+        /* Change the color of the dividers */
+            padding-top: 20px; /* Add some padding to make it visually pleasing */
+    /* Change the background color of the footer */
+            border-radius: 10px; /* Add rounded corners to the footer */
+        }
+
+        .coin-image {
+            max-width: 400px; /* Adjust the size of the coin image */
+            margin: 0 auto; /* Center the image */
+            display: block; /* Ensure the image is centered */
+            background-color:#eea950;
+            border-radius: 50%;
+        }
+
+        .social-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .social-buttons2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .social-buttons2 a {
+            display: inline-flexbox;
+            margin-right: 10px;
+        }
+        .social-buttons2 a img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-buttons a img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #roadmap ol {
+            list-style: none; /* Remove default list style */
+            padding-left: 0;
+        }
+
+        .roadmap-step {
+            background-color: #8d8377; /* Green background color for roadmap steps */
+            border-radius: 80px;
+            margin-bottom: 20px; /* Add bottom margin to create space between steps */
+        }
+
+        .roadmap-step::before {
+            content: '';
+            display: block;
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #countdown {
+            font-size: 24px;
+            margin-top: 20px;
+            
+        }
+
+        .image-container{
+            display: flex; /*align items horizontally*/
+        }
+        .image-container img {
+            width: auto;
+            height: 200px;
+            max-width: 450px;
+            margin: 0 auto;
+            border-radius: 10%;
+            display: block;
+        }
+        .image-container2{
+            display: flex; /*align items horizontally*/
+        }
+        .image-container2 img {
+            width: auto;
+            height: 200px;
+            max-width: 450px;
+            margin: 0 auto;
+            border-radius: 10%;
+            display: block;
+            background-color: #ffffff;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 80px;">Mao</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+        <div class="social-buttons">
+            <a href="https://pump.fun/profile/6G88JivjrC4yfSdXU6C4eLFz5WZ93GfgXdsLjcss5VN9"><img src="pump.webp" alt="PumpFun"></a>
+            <a href="https://twitter.com/unrevealedcoin"><img src="twitter.webp" alt="Twitter"></a>
+            <a href="https://t.me/+jPRGeqsjTQU2ZGU0"><img src="telegram.webp" alt="Telegram"></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Mao</h2>
+            <p>它是猫</p>
+                <img src="Logo.jpg" alt="coin-image" class="coin-image">
+            <br>
+            <h2>STICKERS!</h2>
+            <div class="image-container2" alt="stickers">
+                <img src="sticker1.webp" alt="image1">
+                <img src="CATGRUMPY.webp" alt="Image2">
+                <img src="STICKER4.webp" alt="image3" >
+                <img src="STICKER5.webp" alt="image3">
+            </div>
+            <br>
+        </section>
+
+        <section id="roadmap">
+            <h2>Roadmap</h2>
+            <p>Our vision for the future:</p>
+            <ol>
+                <li><div class="roadmap-step">Launch website - Completed</div></li>
+                <li><div class="roadmap-step">Setup Telegram - Completed</div></li>
+                <li><div class="roadmap-step">Launching on Pumpfun.com</div></li>
+                <li><div class="roadmap-step">Hit Raydium</div></li>
+                <li><div class="roadmap-step">Pay for Dex</div></li>
+            </ol>
+            <ul>
+                <div class="social-buttons2">
+                    <a href="https://pump.fun"><img src="pump.webp" alt="PumpFun"></a>
+                    <a href="https://twitter.com/unrevealedcoin"><img src="twitter.webp" alt="Twitter"></a>
+                    <a href="https://t.me/+jPRGeqsjTQU2ZGU0"><img src="telegram.webp" alt="Telegram"></a>
+                </div>
+        </ul>
+            <br>
+            <br>
+            <br>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 CatWifNoodleHats. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Set the date for the countdown
+        var countDownDate = new Date("Apr 27, 2024 00:00:00").getTime();
+
+        // Update the countdown every second
+        var x = setInterval(function() {
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Calculate the distance between now and the countdown date
+            var distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown timer
+            document.getElementById("countdown").innerHTML = "Countdown: " + days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
